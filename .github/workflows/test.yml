@@ -40,7 +40,7 @@ jobs:
       - uses: actions/checkout@v3
       
         env:
-        Greeting: Hello
+          Greeting: Hello
       
       - name: Run a one-line script
         run: write-output $Greeting
