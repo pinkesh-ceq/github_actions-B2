@@ -22,7 +22,7 @@ jobs:
           python-version: '3.7.7'
       - name: Run a one-line script
         run: |
-          cd sc/main_script
+          cd sc/main script
           python run.py
 
       # Runs a set of commands using the runners shell
@@ -43,7 +43,7 @@ jobs:
           Greeting: Hello
       
       - name: Run a one-line script
-        run: write-output $Greeting
+        run: echo $Greeting
 
       # Runs a set of commands using the runners shell
       - uses: actions/setup-python@v2
