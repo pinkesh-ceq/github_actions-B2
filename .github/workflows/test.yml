@@ -9,13 +9,17 @@ on:
   #   branches: [ "main" ]
 
 env:
-  Greeting: Hello
+  Greeting: Bye
+  file_name: "main.py"
+  num: 10.5
+  pyhton main.py // python $file_name
+  
   
 jobs:
   
   print_Message_on_ubuntu:
   
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-latest $Greeting
 
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
@@ -36,7 +40,7 @@ jobs:
 
   print_Message_with_windows:
   
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
 
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
