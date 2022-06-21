@@ -12,7 +12,7 @@ env:
   Greeting: Bye
   file_name: "main.py"
   num: 10.5
-  pyhton main.py // python $file_name
+  # pyhton main.py // python $file_name
   
   
 jobs:
