@@ -12,7 +12,7 @@ env:
   Greeting: Bye
   file_name: "main.py"
   num: 10.5
-  message: ${{ secrets.SECRET_MESSAGE }}
+  message: ${{ secrets.SECRET_TOKEN }}
   # pyhton main.py // python $file_name
   
   
@@ -52,3 +52,5 @@ jobs:
   #       run: |
   #         cd scripts
   #         python main.py
+
+
