@@ -19,7 +19,7 @@ jobs:
   
   print_Message_on_ubuntu:
   
-    runs-on: self-hosted
+    runs-on: ubuntu-latest
 
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
@@ -28,8 +28,9 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
         run: |
-          echo Add other actions to build,
+          ${{ secrets.SECRET_MESSAGE }}
           echo test, and deploy your project.
+
 
   # print_Message_with_windows:
   
